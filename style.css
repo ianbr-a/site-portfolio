@@ -4,7 +4,20 @@
     width: 80px;
     margin: 8px auto;
 }
-.gradiente {
-    background: linear-gradient(45deg, #00FFFF,#008080);
+.container {
+    background-color: #c8ff00;
     text-align: center;
+}
+body {
+    background: linear-gradient( #4B0082, #000000);
+}
+.item a {
+    display: flex;
+    justify-content: center;
+}
+.item p {
+    font-size: 20px;
+    margin-top: 15px;
+    color: #4B0082;
+    font-weight: bold;
 }

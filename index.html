@@ -5,36 +5,64 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Portfólio </title>
+
+    <!-- Estilo: CSS -->
+
     <link rel="stylesheet" href="style.css">
+
+    <!-- Estilo: Bootstrap -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+    <!-- Script: JS -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"> </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"> </script>
 </head>
-<body class="gradiente">
-    <section id="apps">
-        <h1> Aplicativos</h1>
-        <div class="linha"> </div>
-        <iframe width="392" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/F2mttPH-5r6D6devbiAkIlBLx_HTDyII-Oq8KXklpQo/embed"></iframe>
-        <iframe width="392" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/Xwgx82NGphShXUOjS4UXF9568JqsNAQX4YKpr10wlAM/embed"></iframe>
-    </section>
-
-    <section id="jogos">
-        <h1> Jogos </h1>
-        <div class="linha"></div>
-        <a href="https://studio.code.org/projects/gamelab/VCEd1wlR5Q8geCe7ayVxUL-dbCDAoQiTI_3QmkzJ4T0" target="_blank"> 
-            <img src="imagens/navigate-in-the-space.PNG" alt="">
-        </a>
-        <a href="https://studio.code.org/projects/gamelab/Em-zqjl6W7q1hy_DmAuWJ2TvDjbb3VsF1Vlf5oCIhVk" target="_blank "> 
-            <img src="imagens/carros-infinitos.PNG" alt="">
-        </a>
-    </section>
-
-    <section id="chatbot">
-        <h1> Chatbot</h1>
-        <div class="linha"></div>
-        <iframe
-    allow="microphone;"
-    width="350"
-    height="430"
-    src="https://console.dialogflow.com/api-client/demo/embedded/00baaf1f-4da5-4be8-b2e4-2aa461d5de5b">
-</iframe>
-    </section>
+<body>
+    <div class="container">
+        <section id="apps">
+            <h1> Aplicativos</h1>
+            <div class="linha"> </div>
+            <iframe width="392" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/F2mttPH-5r6D6devbiAkIlBLx_HTDyII-Oq8KXklpQo/embed"></iframe>
+            <iframe width="392" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/Xwgx82NGphShXUOjS4UXF9568JqsNAQX4YKpr10wlAM/embed"></iframe>
+        </section>
+        <section id="jogos">
+            <h1> Jogos </h1>
+            <div class="linha"></div>
+            <div id="meuCarrossel" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <a href="https://studio.code.org/projects/gamelab/VCEd1wlR5Q8geCe7ayVxUL-dbCDAoQiTI_3QmkzJ4T0" target="_blank">
+                            <img src="imagens/navigate-in-the-space.PNG" alt="">
+                        </a>
+                        <p> Navigate in the Space </p>
+                    </div>
+                    <div class="item">
+                        <a href="https://studio.code.org/projects/gamelab/Em-zqjl6W7q1hy_DmAuWJ2TvDjbb3VsF1Vlf5oCIhVk" target="_blank ">
+                            <img src="imagens/carros-infinitos.PNG" alt="">
+                        </a>
+                        <p> Carros Infinitos </p>
+                    </div>
+                </div>
+                <a class="left carousel-control" href="#meuCarrossel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"> </span>
+                </a>
+                <a class="right carousel-control" href="#meuCarrossel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"> </span>
+                </a>
+            </div>
+        </section>
+        <section id="chatbot">
+            <h1> Chatbot</h1>
+            <div class="linha"></div>
+            <iframe
+        allow="microphone;"
+        width="350"
+        height="430"
+        src="https://console.dialogflow.com/api-client/demo/embedded/00baaf1f-4da5-4be8-b2e4-2aa461d5de5b">
+        </iframe>
+        </section>
+    </div>
 </body>
 </html>
